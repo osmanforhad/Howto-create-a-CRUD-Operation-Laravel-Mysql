@@ -429,21 +429,6 @@
         <script src="{{asset('backend/js/counter.js')}}"></script>
         <script src="{{asset('backend/js/retina.js')}}"></script>
         <script src="{{asset('backend/js/custom.js')}}"></script>
-           <!--Boot box CDN for javascript allert-->
-        <script type="text/javascript" src="{{asset('https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.js')}}"></script>
-        <!--js alert script for delete data-->
-        <script>
-        $(document).on("click", "#delete", function (e) {
-            e.preventDefault();
-            var link = $(this).attr("href");
-            bootbox.confirm("Are Sure want to delete !", function (confirm) {
-                if (confirm) {
-                    window.location.href = link;
-                };
-                
-            });
-        });
-        </script>
         <!-- end: JavaScript-->
     </body>
 </html>
